@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { X, Zap, Share2, Facebook, Twitter, Linkedin, Mail } from 'lucide-react'
+import { X, Share2, Facebook, Twitter, Linkedin, Mail } from 'lucide-react'
 
 export function FloatingWidget() {
   const [isOpen, setIsOpen] = useState(false)

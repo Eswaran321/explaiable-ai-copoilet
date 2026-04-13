@@ -73,10 +73,10 @@ Focus on:
 Respond ONLY with valid JSON, no additional text.`
 
     const { text } = await generateText({
-      model: groq('mixtral-8x7b-32768'),
+      model: groq('mixtral-8x7b-32768') as any,
       prompt,
       temperature: 0.2, // Lower temperature for more consistent results
-      maxTokens: 1000,
+      maxOutputTokens: 1000,
     })
 
     // Parse and validate the response

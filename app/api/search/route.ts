@@ -27,7 +27,7 @@ Generate 5-8 highly relevant search results with:
 Return as JSON array with objects containing: title, url, snippet, relevance_score, source_type, accuracy`
 
     const { text } = await generateText({
-      model: groq('mixtral-8x7b-32768'),
+      model: groq('mixtral-8x7b-32768') as any,
       prompt,
       temperature: 0.5,
     })
@@ -46,7 +46,7 @@ Return as JSON array with objects containing: title, url, snippet, relevance_sco
 
     // Store in Supabase
     const supabase = getSupabaseServerClient()
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('search_results')
       .insert([
         {

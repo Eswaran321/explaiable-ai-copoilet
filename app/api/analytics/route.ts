@@ -4,7 +4,6 @@ import { NextRequest, NextResponse } from 'next/server'
 export async function GET(request: NextRequest) {
   try {
     const userId = request.nextUrl.searchParams.get('userId')
-    const period = request.nextUrl.searchParams.get('period') || '7d'
 
     if (!userId) {
       return NextResponse.json(
