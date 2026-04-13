@@ -1,0 +1,36 @@
+{
+  "name": "ai-content-analyzer",
+  "version": "1.0.0",
+  "description": "Advanced AI Content Detection & Analysis Platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "^16.0.0",
+    "ai": "^6.0.0",
+    "@ai-sdk/groq": "^1.0.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "tailwindcss": "^3.4.0",
+    "clsx": "^2.1.1",
+    "recharts": "^2.10.0",
+    "lucide-react": "^0.407.0",
+    "swr": "^2.2.5",
+    "date-fns": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.3.3",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.32"
+  }
+}
